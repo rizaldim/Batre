@@ -3,8 +3,25 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/stack"
     >
+    <Button android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        />
+    <TextView android:id="@+id/last_updated_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/mytextview"
+        />
     <TextView android:id="@+id/battery_status_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/mytextview"
+        />
+    <TextView android:id="@+id/plugged_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/mytextview"
@@ -12,19 +29,26 @@
     <TextView android:id="@+id/temperature_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         style="@style/mytextview"
         />
     <TextView android:id="@+id/remaining_time_to_full_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         style="@style/mytextview"
         />
     <TextView android:id="@+id/battery_level_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        style="@style/mytextview"
+        />
+    <TextView android:id="@+id/battery_health_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/mytextview"
+        />
+    <TextView android:id="@+id/battery_capacity_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         style="@style/mytextview"
         />
 </LinearLayout>
